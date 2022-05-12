@@ -14,12 +14,12 @@ public class HelloWorld {
 
     // test get
     @RequestMapping(value = "/hello/get",method = RequestMethod.GET)
-    public Result helloGet(@RequestParam("token") String token,
+    public Result<Object> helloGet(@RequestParam("token") String token,
                            @RequestParam(value="userId", required = false) String userId) {
         System.out.println("token  =" + token);
         System.out.println("userID =" + userId);
 
-        Result res = new Result();
+        Result<Object> res = new Result<>();
         res.setData("hello world! - from get");
         res.setSuccess();
 

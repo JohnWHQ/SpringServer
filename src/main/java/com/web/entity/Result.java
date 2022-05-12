@@ -56,8 +56,8 @@ public class Result<T> {
     }
 
     public void setSuccess() {
-        setCode(ResultStatus.SUCCESSED.getCode());
-        setStatus(ResultStatus.SUCCESSED.getStatus());
+        setCode(ResultStatus.SUCCESS.getCode());
+        setStatus(ResultStatus.SUCCESS.getStatus());
     }
 
     public void setFailed() {

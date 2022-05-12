@@ -6,7 +6,7 @@ package com.web.enums;
  */
 public enum ResultStatus {
 
-    SUCCESSED("SUCCESSED", 0),
+    SUCCESS("SUCCESS", 0),
     FAILED("FAILED", -1);
 
     String status;
