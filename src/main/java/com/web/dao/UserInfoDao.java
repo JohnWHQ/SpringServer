@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.Query;
 
 
 /**
- * Created by wanghanqi on 2019/11/01.
+ * DAO层示例
  */
 public interface UserInfoDao extends JpaRepository<UserInfo, Long> {
     @Query(value = "select * from user_info where user_id=?1", nativeQuery = true)

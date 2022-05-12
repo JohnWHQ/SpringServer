@@ -5,9 +5,7 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 /**
- * rt
- *
- * Created by wanghanqi on 2019/10/26.
+ * 服务端全局配置类
  */
 
 @Component

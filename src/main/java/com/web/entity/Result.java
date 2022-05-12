@@ -3,7 +3,7 @@ package com.web.entity;
 import com.web.enums.ResultStatus;
 
 /**
- * Created by wanghanqi on 2019/10/23.
+ * 服务端通用返回实体
  */
 public class Result<T> {
     String taskId;

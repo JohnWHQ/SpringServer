@@ -16,9 +16,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.Arrays;
 
 /**
- *  all request logs resolve
- *
- * Created by wanghanqi on 2019/10/25.
+ *  拦截器示例 登录拦截器
  */
 @Aspect
 @Component

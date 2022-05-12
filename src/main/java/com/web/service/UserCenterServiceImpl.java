@@ -6,11 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
- *
- *
- * Created by wanghanqi on 2019/11/4.
+ * service implements 示例
  */
-
 @Service
 public class UserCenterServiceImpl implements UserCenterService {
     @Autowired

@@ -1,7 +1,7 @@
 package com.web.exceptions;
 
 /**
- * Created by wanghanqi on 2019/10/26.
+ * 全局通用异常类
  */
 public class CommonException extends RuntimeException {
     private Integer code;

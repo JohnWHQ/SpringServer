@@ -10,9 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 /**
- *
- * Created by wanghanqi on 2019/10/23.
- *
+ * Controller示例
  */
 @RestController
 @RequestMapping(value = "/login")

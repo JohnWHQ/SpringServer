@@ -3,9 +3,7 @@ package com.web.repository;
 import javax.persistence.*;
 
 /**
- * LBS Message
- *
- * Created by wanghanqi on 2019/11/01.
+ * ORM RDBMS表映射示例
  */
 
 @Entity

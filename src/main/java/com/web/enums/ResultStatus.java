@@ -1,6 +1,7 @@
 package com.web.enums;
 
 /**
+ * 全局异常枚举类
  * Created by wanghanqi on 2019/10/23.
  */
 public enum ResultStatus {

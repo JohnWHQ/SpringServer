@@ -1,7 +1,7 @@
 package com.web.entity;
 
 /**
- * Created by wanghanqi on 2019/10/25.
+ * 请求接受实体类示例
  */
 public class Request {
     Integer id;

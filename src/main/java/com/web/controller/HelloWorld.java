@@ -5,32 +5,12 @@ import com.web.entity.Result;
 import com.web.utils.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.*;
-
 /**
- * Created by wanghanqi on 2019/10/23.
+ * Controller示例
  */
 @RestController
 @RequestMapping(value = "/test")
 public class HelloWorld {
-
-    public static void main(String[] args) {
-        Queue<int[]> q = new LinkedList<>();
-        q.add(new int[] {1, 2});
-        Arrays.fill(new int[2], -1);
-        String s = "";
-        ArrayList<String> l = new ArrayList<>();
-        Collections.sort(l, (o1, o2) -> {
-            String[] cur1 = o1.split(" ", 2);
-            String[] cur2 = o2.split(" ", 2);
-            if(cur1[1].equals(cur2[1])) {
-                return cur1[0].compareTo(cur2[0]);
-            } else {
-                return cur1[1].compareTo(cur2[1]);
-            }
-        });
-
-    }
 
     // test get
     @RequestMapping(value = "/hello/get",method = RequestMethod.GET)

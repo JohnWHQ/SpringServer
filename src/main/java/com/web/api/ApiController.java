@@ -8,8 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- *
- * Created by wanghanqi on 2019/11/11.
+ * API层示例
  */
 
 @RestController
@@ -23,7 +22,6 @@ public class ApiController {
         Result res = new Result();
         res.setMsg("Api成功！");
         return res;
-
     }
 
 }

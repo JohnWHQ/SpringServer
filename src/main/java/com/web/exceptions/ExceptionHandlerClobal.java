@@ -8,9 +8,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
- * global e catch and resolve
- *
- * Created by wanghanqi on 2019/10/26.
+ * 全局异常捕获类
  */
 
 @ControllerAdvice
@@ -20,9 +18,8 @@ public class ExceptionHandlerClobal {
 
     @ExceptionHandler(value = Exception.class)
     @ResponseBody
-    public Result exceptionHandle(Exception e) {
-        Result res = new Result();
-        // to - do
+    public Result<Object> exceptionHandle(Exception e) {
+        Result<Object> res = new Result<>();
 
         if (e instanceof CommonException) {
             res.setFailed();

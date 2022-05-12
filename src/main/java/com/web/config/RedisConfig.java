@@ -16,7 +16,8 @@ import org.springframework.data.redis.serializer.RedisSerializer;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 
 /**
- * redis缓存设置
+ *
+ * redis相关配置
  *
  * @author  John Wang
  *

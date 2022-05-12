@@ -9,8 +9,7 @@ import org.springframework.context.annotation.Bean;
 
 
 /**
- *
- * Created by wanghanqi on 2019/10/28.
+ * Https重写改造示例
  */
 
 //@Configuration
