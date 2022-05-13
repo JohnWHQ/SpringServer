@@ -13,40 +13,40 @@ public class UserInfo {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(length = 256, name = "user_id")
+    @Column(length = 256)
     String userId;
 
-    @Column(length = 256, name = "nick_name")
+    @Column(length = 256)
     String nickName;
 
-    @Column(name = "gender")
+    @Column
     Integer gender;
 
-    @Column(length = 128, name = "country")
+    @Column(length = 128)
     String country;
 
-    @Column(length = 128, name = "province")
+    @Column(length = 128)
     String province;
 
-    @Column(length = 128, name = "city")
+    @Column(length = 128)
     String city;
 
-    @Column(name = "phone_number")
+    @Column
     Long phoneNumber;
 
-    @Column(length = 128, name = "language")
+    @Column(length = 128)
     String language;
 
-    @Column(columnDefinition = "TEXT", name = "avatar_url")
+    @Column(columnDefinition = "TEXT")
     String avatarUrl;
 
-    @Column(name = "register_time")
+    @Column
     Long registerTime;
 
-    @Column(name = "update_time")
+    @Column
     Long updateTime;
 
-    @Column(name = "register_type")
+    @Column
     String registerType;
 
     public UserInfo() {
