@@ -14,7 +14,7 @@ public class GlobalConfig extends WebMvcConfigurerAdapter {
     /**
      * 配置ajax跨域访问
      *
-     * @param registry
+     * @param registry 跨域注册实体
      */
     @Override
     public void addCorsMappings(CorsRegistry registry) {

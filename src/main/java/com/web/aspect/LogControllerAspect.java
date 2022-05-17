@@ -38,7 +38,7 @@ public class LogControllerAspect {
 
         ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
         HttpServletRequest servletRequest = attributes.getRequest();
-
+        // todo 修改通用请求需要记录的结构
         info = info + "url          = " + servletRequest.getRequestURL() + "\n";
         info = info + "method       = " + servletRequest.getMethod() + "\n";
         info = info + "ip           = " + servletRequest.getRemoteAddr() + "\n";

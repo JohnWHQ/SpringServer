@@ -18,8 +18,8 @@ public class ApiController {
     private static final Logger log = (Logger) LoggerFactory.getLogger(ApiController.class);
 
     @RequestMapping(value = "/test", method = RequestMethod.GET)
-    public Result testApi() {
-        Result res = new Result();
+    public Result<Object> testApi() {
+        Result<Object> res = new Result<>();
         res.setMsg("Api成功！");
         return res;
     }

@@ -28,10 +28,10 @@ public class HelloWorld {
 
     // test post
     @RequestMapping(value = "/hello/post",method = RequestMethod.POST)
-    public Result helloPost(@RequestBody Request req) {
+    public Result<Object> helloPost(@RequestBody Request req) {
         System.out.print(req);
 
-        Result res = new Result();
+        Result<Object> res = new Result<>();
         res.setData("hello world! - from post");
         res.setSuccess();
         return res;
@@ -39,9 +39,9 @@ public class HelloWorld {
 
     // test post
     @RequestMapping(value = "/token",method = RequestMethod.POST)
-    public Result getToken(@RequestBody Request req) {
+    public Result<Object> getToken(@RequestBody Request req) {
 
-        Result res = new Result();
+        Result<Object> res = new Result<>();
         res.setData(StringUtils.generateToken(req.getKey(), req.getValue()));
         res.setSuccess();
         return res;

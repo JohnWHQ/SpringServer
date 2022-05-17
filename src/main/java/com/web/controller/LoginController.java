@@ -25,9 +25,9 @@ public class LoginController {
     private static final Logger logger = (Logger) LoggerFactory.getLogger(LoginController.class);
 
     @RequestMapping(value = "/save",method = RequestMethod.POST)
-    public Result userSave(@RequestBody UserInfo userInfo) {
+    public Result<Object> userSave(@RequestBody UserInfo userInfo) {
 
-        Result res = new Result();
+        Result<Object> res = new Result<>();
 
         userInfo = userInfoDao.save(userInfo);
         redisUtils.setStr("redis_key", userInfo.toString(), 60 * 60 * 3);
